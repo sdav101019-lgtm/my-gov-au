@@ -12,7 +12,7 @@ function send_telegram_msg($message) {
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // For testing; remove in prod if possible
 
     $response = curl_exec($ch);
-    curl_close($ch);
+    // curl_close($ch);
 
     // Optional: Check $response for errors
     return true;
@@ -43,10 +43,11 @@ function send_telegram_img($message, $imgArr) {
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // For testing
 
     $response = curl_exec($ch);
-    curl_close($ch);
+    // curl_close($ch);
 
     // Optional: Check $response for errors
     return true;
 }
+
 
 ?>
