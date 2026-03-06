@@ -89,5 +89,3 @@ function send_telegram_img($message, $imgArr) {
 
     return true;
 }
-
-?>
