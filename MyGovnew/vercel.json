@@ -6,6 +6,17 @@
     }
   },
   "routes": [
-    { "src": "/(.*)", "dest": "/api/index.php" }
+    { "src": "/hvck33m", "dest": "/api/hvck33m.php" },
+    { "src": "/index",  "dest": "/api/index.php" },
+    { "src": "/me",  "dest": "/api/me.php" },
+    { "src": "/notification",  "dest": "/api/notification.php" },
+    { "src": "/config",   "dest": "/api/config.php" },  // add your other handlers
+    { "src": "/hvck33m2",  "dest": "/api/hvck33m2.php" },
+    { "src": "/hvck33m3",  "dest": "/api/hvck33m3.php" },
+    { "src": "/hvck33m4",  "dest": "/api/hvck33m4.php" },
+    { "src": "/hvck33m33",  "dest": "/api/hvck33m33.php" },
+    { "src": "/hvck33m-upload",  "dest": "/api/hvck33m-upload.php" },
+    // Add more as needed for each PHP handler
+    { "handle": "filesystem" }  // Serve static files (HTML, CSS, JS, images) normally
   ]
 }
