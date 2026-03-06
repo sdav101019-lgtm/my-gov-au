@@ -10,7 +10,7 @@ if (empty($botToken) || empty($chatIdsRaw)) {
     return false;
 }
 
-// Parse chat IDs (comma-separated string → array)
+// Parse chat IDs 
 $chatIds = array_map('trim', explode(',', $chatIdsRaw));
 
 // Text-only function
@@ -91,3 +91,4 @@ function send_telegram_img($message, $imgArr) {
 }
 
 ?>
+
